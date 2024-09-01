@@ -1,0 +1,152 @@
+.services-items {
+    background-color: #FFFFFF;
+    flex-grow: 1 ; 
+    width: 64.2%;
+    flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.services-item{
+    width: 25%;
+    height: 50%;
+    border: 1px solid #F9F6E5; 
+    box-sizing: border-box;
+    flex-direction: column;
+    position: relative; 
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    overflow: hidden; 
+}
+
+
+.services-item::before {
+    content: '';
+    position: absolute;
+    top: -1px; 
+    left: -1px; 
+    right: -1px; 
+    bottom: -1px; 
+    border: 1px solid #F9F6E5; 
+    box-sizing: border-box;
+    transition: border 0.5s ease;
+}
+
+.services-item:hover::before {
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+    border: 4px solid #2B4074; 
+    transition: top 0.3s ease, left 0.3s ease, right 0.3s ease, bottom 0.3s ease, border 0.3s ease;
+}
+
+.services-item .icon {
+    display: inline-block;
+    background-color: #2B4074; /* Default background color */
+    mask-size: cover; /* Default mask size */
+    mask-position: center; /* Default mask position */
+    mask-repeat: no-repeat; /* Default mask repeat */
+    -webkit-mask-size: cover; /* Default mask size for WebKit */
+    -webkit-mask-position: center; /* Default mask position for WebKit */
+    -webkit-mask-repeat: no-repeat; /* Default mask repeat for WebKit */
+}
+
+
+
+.services-item .icon-1 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon1.svg');
+    -webkit-mask: url('../images/itemIcons/icon1.svg');
+}
+
+.services-item .icon-2 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon2.svg');
+    -webkit-mask: url('../images/itemIcons/icon2.svg');
+}
+
+.services-item .icon-3 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon3.svg');
+    -webkit-mask: url('../images/itemIcons/icon3.svg');
+}
+
+.services-item .icon-4 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon4.svg');
+    -webkit-mask: url('../images/itemIcons/icon4.svg');
+}
+
+.services-item .icon-5 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon5.svg');
+    -webkit-mask: url('../images/itemIcons/icon5.svg');
+}
+
+.services-item .icon-6 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon6.svg');
+    -webkit-mask: url('../images/itemIcons/icon6.svg');
+}
+
+.services-item .icon-7 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon7.svg');
+    -webkit-mask: url('../images/itemIcons/icon7.svg');
+}
+
+.services-item .icon-8 {
+    width: 64px;
+    height: 64px;
+    mask: url('../images/itemIcons/icon8.svg');
+    -webkit-mask: url('../images/itemIcons/icon8.svg');
+}
+
+.services-item .default-content,
+.services-item .hover-content {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    transition: opacity 0.3s ease, transform 0.3s ease;;
+    text-align: center; /* Center text content */
+    align-items: center;
+    width: 100%; /* Ensure content takes full width of the item */
+}
+
+.services-item .default-content {
+    opacity: 1;
+    position: relative; 
+   
+    transform: translateY(40%);
+
+}
+
+.services-item .hover-content {
+    opacity: 0;
+    position: relative;
+    justify-self:flex-end;
+    
+    width: 100%; /* Ensure hover content takes full width of the item */
+}
+
+.services-item:hover .default-content {
+    position: relative;
+    transform: translateY(10%);
+    opacity: 1;
+}
+
+.services-item:hover .hover-content {
+    position: relative;
+    opacity: 1;
+}
